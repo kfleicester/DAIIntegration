@@ -12,7 +12,7 @@ pipeline {
         steps {
 	echo 'Starting DAI Runner...'
 	    sh 'chmod +x DAIrunner'
-            sh './DAIrunner -v testcase http://192.168.214.140:8000/ philippa.merrill@eggplantsoftware.com xSQ6fHd6Zm8m TESTCASE1 DAITest JenkinsIntegration PhilippaCloud1 JenkinsIntegration.suite'
+            sh './DAIrunner -v testcase https://demo.dai.eggplant.cloud/ kieran.leicester@keysight.com H4wk3y3! demoTC kieran.leicester@keysight.com demoLesson2 kierleic "/Users/kierleic/Desktop/EPF/Chapter\\ 3\\ Suite.suite"'
         }
     }
     
