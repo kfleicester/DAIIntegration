@@ -1,0 +1,176 @@
+{
+  "lastmodifieddate" : 1662466664.3374949,
+  "testlocationdata" : [
+    {
+      "name" : "icons\/backToTop.png",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "LOCAL",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Tolerant of Background",
+        "Discrepancy" : "_0",
+        "Tolerance" : "_45",
+        "HotSpot" : "[17,16]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "connectionserverid" : "10.211.55.3",
+      "capturerect" : [
+        957,
+        669,
+        34,
+        32
+      ]
+    },
+    {
+      "name" : "icons\/backToTop.png",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "LOCAL",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Tolerant of Background",
+        "Discrepancy" : "_0",
+        "Tolerance" : 50,
+        "HotSpot" : "[17,16]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "connectionserverid" : "10.211.55.3",
+      "capturerect" : [
+        957,
+        669,
+        34,
+        32
+      ]
+    },
+    {
+      "name" : "icons\/backToTop.png",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "LOCAL",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Tolerant of Background",
+        "Discrepancy" : "_0",
+        "Tolerance" : 55,
+        "HotSpot" : "[17,16]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "connectionserverid" : "10.211.55.3",
+      "capturerect" : [
+        957,
+        669,
+        34,
+        32
+      ]
+    },
+    {
+      "name" : "icons\/backToTop.png",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "LOCAL",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Tolerant of Background",
+        "Discrepancy" : "8",
+        "Tolerance" : 55,
+        "HotSpot" : "[17,16]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "connectionserverid" : "10.211.55.3",
+      "capturerect" : [
+        957,
+        669,
+        34,
+        32
+      ]
+    },
+    {
+      "name" : "icons\/backToTop.png",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "LOCAL",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Tolerant of Background",
+        "Discrepancy" : "12",
+        "Tolerance" : 20,
+        "HotSpot" : "[17,16]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "connectionserverid" : "10.211.55.3",
+      "capturerect" : [
+        957,
+        669,
+        34,
+        32
+      ]
+    },
+    {
+      "name" : "icons\/backToTop.png",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Smoothed for Text",
+        "Discrepancy" : "12",
+        "Tolerance" : "_31",
+        "HotSpot" : "[17,16]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "connectionserverid" : "10.211.55.3",
+      "capturerect" : [
+        957,
+        669,
+        34,
+        32
+      ]
+    }
+  ],
+  "createddate" : 1660749014.358422,
+  "lastfoundlocation" : [
+    1853,
+    981,
+    34,
+    32
+  ],
+  "originalcapturelocation" : [
+    957,
+    669,
+    34,
+    32
+  ],
+  "lastfounddate" : 1664549825.3947868,
+  "name" : "icons\/backToTop"
+}

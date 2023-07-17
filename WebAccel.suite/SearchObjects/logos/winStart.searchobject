@@ -1,0 +1,72 @@
+{
+  "lastmodifieddate" : 1662114769.7057891,
+  "testlocationdata" : [
+    {
+      "name" : "logos\/winStart.png",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Tolerant of Background",
+        "Discrepancy" : "_0",
+        "Tolerance" : "_45",
+        "HotSpot" : "[15,9]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "connectionserverid" : "10.211.55.3",
+      "capturerect" : [
+        15,
+        1051,
+        18,
+        18
+      ]
+    },
+    {
+      "name" : "logos\/winStart.png",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "AWSSUT",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Tolerant of Background",
+        "Discrepancy" : "_0",
+        "Tolerance" : 70,
+        "HotSpot" : "[15,9]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "connectionserverid" : "18.169.187.30",
+      "capturerect" : [
+        15,
+        1051,
+        18,
+        18
+      ]
+    }
+  ],
+  "createddate" : 1661515630.2499881,
+  "lastfoundlocation" : [
+    15,
+    1051,
+    18,
+    18
+  ],
+  "originalcapturelocation" : [
+    15,
+    1051,
+    18,
+    18
+  ],
+  "lastfounddate" : 1669295653.2789011,
+  "name" : "logos\/winStart"
+}

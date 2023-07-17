@@ -1,0 +1,29 @@
+﻿params browser, country
+//Start using Omega13
+
+set universal langFile to ResourcePath("config_Lookup.xlsx")
+set universal model to "M9384B"
+try
+	"DAIWrappers/kCom".launchKcom (browser), (country)
+	"DAIWrappers/kCom".changeURL (universal model)
+	core.navigate ("Key Specifications"), ("Type")
+	core.navigate ("Key Specifications")
+	"DAIWrappers/kCom".getTS ("redButton")
+	core.navigate ("Request Quote")
+	"DAIWrappers/quotePage".countErrors
+	"DAIWrappers/quotePage".inpputInfo
+	"DAIWrappers/kCom".getTS ("redButton")
+	core.navigate ("Request Quote"), ("Thank You for Your Quote Request") 
+	"DAIWrappers/quotePage".getQuoteNum
+	core.validate ("DAIWrappers/kCom".getQuoteVal ("email"))
+	"DAIWrappers/quotePage".checkCMPID
+	core.closeBrowser
+catch
+	CaptureScreen {Name: universal screenshotPath & "Error" && the hour && the minute }
+	core.closeBrowser
+	logerror "script failed"
+end try
+
+
+//Stop using omega13
+

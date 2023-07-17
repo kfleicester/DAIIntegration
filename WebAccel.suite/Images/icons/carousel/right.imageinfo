@@ -1,0 +1,23 @@
+﻿{
+    CaptureDate = "2022-09-06 11:39:23 +0000";
+    CaptureHost = "win10RDP";
+    CaptureScreenSize = (
+        "1920",
+        "1080");
+    CropRectangle = "2,4,27,44";
+    HasAlpha = 1;
+    HotSpotX = 22;
+    HotSpotY = 31;
+    ImageDescription = <>;
+    ImageTolerance = 24;
+    LastKnownLocationX = 0;
+    LastKnownLocationY = 0;
+    OriginalLocationX = 1518;
+    OriginalLocationY = 461;
+    Precise = 0;
+    Pulsing = 0;
+    Scale = 1;
+    SearchAlgorithm = "TextSmoothSquare";
+    SearchObjectName = "icons/carousel/right2";
+    tags = ();
+}

@@ -1,0 +1,65 @@
+﻿to openProduct
+	core.navigate (universal product),("View Options and Upgrades")
+end openProduct
+
+to checkBrochure
+	core.navigate ("View Brochure"), ("PRODUCT BROCHURE")
+	core.closeTab
+end checkBrochure
+
+to checkTechSupport
+	core.navigate ("Visit Technical Support"), ("Request Service")
+	core.back ("Visit Technical Support")
+end checkTechSupport
+
+to checkCarousel
+	core.scrollTo ("Quick View")//
+	scrollwheelup 2
+	wait 1
+	core.carouselRight ("View and Compare")
+end checkCarousel
+
+to openQuote
+	scrollwheelup 1
+	wait 1
+	set textstyle.textdifference to "1"
+	"DAIWrappers/kCom".getTS ("white")
+	core.navigate ("Get Quote")
+	set textstyle.textdifference to []
+	"DAIWrappers/kCom".getTS ("white")
+	
+	Try
+		core.validate ("Select a configuration")
+		core.navigate ("Next"),("Request a Quote")
+		
+	Catch theException
+		core.validate ("Request a Quote")
+	End try
+	core.back
+	core.pageLoad
+end openQuote
+
+to checkServices
+	core.scrollTo ("Protect Your Signal")
+	core.navigate ("KeysightCare"), ("KeysightCare Service")
+	core.back ("KeysightCare")
+	core.navigate ("Calibration Services"), ("Get better test results")
+	core.back ("Calibration Services")
+	core.navigate ("Tech Refresh Services"), ("Maximize asset value")
+	core.back 
+	wait 1
+	scrollwheelup 2
+end checkServices
+
+
+to checkResources
+	core.scrollTo ("Featured")
+	wait 0.5
+	core.navigate ("Brochure")
+	core.pageLoad
+	"DAIWrappers/kCom".getTS ("Default")
+	core.validate ("BROCHURE")
+	core.closeTab
+	core.scrollTo "Contact Us"
+	core.carouselRight ("View All Resources")
+end checkResources

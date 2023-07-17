@@ -1,0 +1,41 @@
+{
+  "ocrcapturestring" : "c 8 0  □ • r     o ’ •  o  o I",
+  "originalcapturelocation" : [
+    375,
+    245,
+    541,
+    328
+  ],
+  "createddate" : 1660751996.425477,
+  "lastmodifieddate" : 1663691600.340977,
+  "name" : "products\/N9040B\/large",
+  "testlocationdata" : [
+    {
+      "connectionserverid" : "10.211.55.3",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "LOCAL",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "capturedocrtext" : "V G & ♦  o  -'6 • a--— • 01 3 A .,\t31 -r • 2 • ®  3 r • •i • •■='   • *1",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Adaptive to Image",
+        "Discrepancy" : "_0",
+        "Tolerance" : "_30",
+        "HotSpot" : "[270,164]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "name" : "products\/N9040B\/large.png",
+      "capturerect" : [
+        375,
+        245,
+        541,
+        328
+      ]
+    }
+  ]
+}

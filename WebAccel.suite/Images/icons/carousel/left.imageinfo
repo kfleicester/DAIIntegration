@@ -1,0 +1,19 @@
+﻿{
+    CaptureDate = "2022-08-17 15:39:15 +0000";
+    CaptureHost = "LOCAL";
+    CaptureScreenSize = (
+        1920,
+        1080);
+    HasAlpha = 0;
+    HotSpotX = 14;
+    HotSpotY = 24;
+    LastKnownLocationX = 0;
+    LastKnownLocationY = 0;
+    OriginalLocationX = 356;
+    OriginalLocationY = 316;
+    Precise = 1;
+    Pulsing = 0;
+    Scale = 1;
+    SearchObjectName = "icons/carousel/left";
+    tags = ();
+}

@@ -1,0 +1,10 @@
+﻿set universal langFile to ResourcePath("SAAP_Lookup.xlsx")
+
+//input country (e.g. United States) dictates which language is selected in the lookup file
+"DAIWrappers/kCom".launchKcom ("msedge"), ("United States")
+"DAIWrappers/mainPage".launchXSeries
+core.closeBrowser
+
+"DAIWrappers/kCom".launchKcom ("msedge"), ("Germany")
+"DAIWrappers/mainPage".launchXSeries
+core.closeBrowser

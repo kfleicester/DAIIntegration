@@ -1,0 +1,82 @@
+﻿
+
+to openQuote
+	//"DAIWrappers/kcom".getTS("Default")
+	core.Navigate ("Get Quote")
+	Try 
+		core.validate ("Select a configuration")
+		core.navigate ("Next"),("Quote Checkout") //"Quote Checkout"
+	Catch theException
+		core.validate ("Quote Checkout")
+	End try
+end openQuote
+
+to checkImages
+	core.navigate ("products/"&universal product&"/mini"),("products/"&universal product&"/large")
+end checkImages
+
+to checkPurchaseOptions
+	(*core.navigate ("Keysight Direct Sales"),("Order from Keysight")
+	core.back ("Get a configured quote")*)
+	(*	core.navigate ("Sold by Authorized Sales Partners"),("Find a Sales or Rental Partner")
+	core.back ("Get a configured quote")// add validation*)
+	core.navigate ("See Buy or Rent Options"),("Product Details")
+	core.back ("View Options and Upgrades")
+	core.navigate ("View Options and Upgrades"),("Product Details")
+	core.back ("View Options and Upgrades")
+	core.navigate ("Visit Technical Support"),("Request Service") 
+	core.back ("View Options and Upgrades")
+end checkpurchaseOptions
+
+
+to checkProductOverview
+	core.navigate ("Highlights"),("KEYSIGHTCARE")
+	core.navigate ("icons/backToTop"),("logos/keysight")
+	core.navigate ("Specifications"),("View More")
+	core.navigate ("icons/backToTop"),("logos/keysight")
+end checkProductOverview
+
+to checkExtendedCapabilities
+	core.navigate ("Options, Software, Accessories"),("Extend the Capabilities")
+	core.navigate ("See Related Software"),(universal product)
+	core.back ("Extend the Capabilities") 
+	core.navigate ("See Related Accessories"),(universal product)
+	core.back ("Extend the Capabilities") 
+	core.navigate ("See All Services"),("Need Help Now")
+	core.back ("Extend the Capabilities")
+	core.navigate ("See All Support"),("Request Service")
+	core.back ("products/"&universal product&"/interestedProduct")
+end checkExtendedCapabilities
+
+to checkProductOptions
+	scrollwheelup 2
+	wait 0.5
+	core.navigate ("View Options and Upgrades"),("Product Details")
+	core.back ("products/"&universal product&"/interestedProduct")
+	core.navigate ("See Buy or Rent Options"),("Product Details")
+	core.back ("products/"&universal product&"/interestedProduct")
+	core.navigate ("icons/backToTop"),("logos/keysight") 
+end checkProductOptions
+
+
+to checkFeaturedResources
+	ScrollWheelDown 2
+	wait 1
+	core.navigate ("Resources"),("Featured")
+	(*	core.navigate ("Data Sheets"),("Multi-touch") // FULL NAME PERHAPS 
+	core.closeTab*)
+	core.navigate ("icons/carousel/right"),("View All Resources") 
+end checkFeaturedResources
+
+
+to checkConfigCarousel
+	core.navigate ("icons/backToTop"),("logos/keysight") 
+	core.navigate ("Standard Signal")
+	if imagefound (image:"icons/carousel/right", waitfor:0)
+		core.navigate ("icons/carousel/right"),("UXA")
+	end if
+	core.navigate ("What's Included"),("UXA Signal Analyzer")
+	core.navigate ("icons/dropDown/compress")
+	core.navigate ("icons/backToTop"),("logos/keysight") 
+end checkConfigCarousel
+

@@ -1,0 +1,66 @@
+﻿to countErrors
+	//expecting 7 occasions of the text 'is required'
+	put EveryImageLocation(text:core.languageLookup("is required"), language:universal language& ", English") into countList
+	put the number of items of countList into foundCount
+	If foundCount = 7 then
+		logsuccess "7 errors found"
+	Else
+		logwarning "incorrect amount of fields required, expected 7 and found "& foundCount
+	End if
+	
+	
+end countErrors
+
+
+to inpputInfo
+	core.textField "Email", "DAIWrappers/kCom".getQuoteVal ("email")
+	core.textField "Last Name", "DAIWrappers/kCom".getQuoteVal ("lastname")
+	core.textField "First Name", "DAIWrappers/kCom".getQuoteVal ("firstname")
+	core.textField "Company", "DAIWrappers/kCom".getQuoteVal ("company")
+	core.textField "Phone", "DAIWrappers/kCom".getQuoteVal ("phone")
+	core.textField "Address Line 1", "DAIWrappers/kCom".getQuoteVal ("address") 
+	core.textField "City", "DAIWrappers/kCom".getQuoteVal ("city")
+	core.textField "State", "DAIWrappers/kCom".getQuoteVal ("state")//
+	core.textField "ZIP", "DAIWrappers/kCom".getQuoteVal ("zip")
+end inpputInfo
+
+to getQuoteNum
+	set universal quoteNum to empty
+	set custrect to ImageRectangle(text:core.languageLookup("Custom Quote"), waitFor:0, language:universal language & ", English")
+	doubleClick custrect.centerbottom + [0,30]
+	typetext controlkey, "c"
+	put the remoteclipboard into universal quoteNum
+end getQuoteNum
+
+to checkCMPID
+	core.inspect ("Open")
+	core.navigate ("Application")
+	core.navigate ("Cookies")
+	doubleclick the MouseLocation
+	core.navigate ("www.keysight")
+	core.textField ("Filter"), ("ELOQUA")
+	core.navigate ("GUID")
+	doubleclick the MouseLocation
+	core.copyAndLog
+	core.textField  ("ELOQUA"), ("KS_")
+	core.navigate ("cmpid")
+	doubleclick the MouseLocation
+	core.copyAndLog
+	core.inspect
+end checkCMPID
+
+to checkEmail
+	set universal language to "English"
+	core.launchURL (universal browser), ("outlook.office.com/mail/")
+	
+	typetext "DAIWrappers/kCom".getQuoteVal ("email"), returnkey
+	waitfor 5, text:"Password"
+	typetext "wD5yP7vXMZrT!vY", returnkey
+	core.validate ("Favorites")
+	core.textField ("Search"), (universal quoteNum)
+	wait 1
+	core.validate ("orders@keysight")
+end checkEmail
+
+
+

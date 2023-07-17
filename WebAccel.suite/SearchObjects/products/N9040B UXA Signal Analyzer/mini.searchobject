@@ -1,0 +1,128 @@
+{
+  "lastmodifieddate" : 1663690759.039839,
+  "ocrcapturestring" : "MB",
+  "testlocationdata" : [
+    {
+      "connectionserverid" : "10.211.55.3",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "LOCAL",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "capturedocrtext" : "MB",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Tolerant of Background",
+        "Discrepancy" : "_0",
+        "Tolerance" : "_45",
+        "HotSpot" : "[28,27]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "name" : "products\/N9040B UXA Signal Analyzer\/mini.png",
+      "capturerect" : [
+        284,
+        557,
+        56,
+        56
+      ]
+    },
+    {
+      "connectionserverid" : "10.211.55.3",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "LOCAL",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "capturedocrtext" : "MB",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Tolerant of Background",
+        "Discrepancy" : "_0",
+        "Tolerance" : 50,
+        "HotSpot" : "[28,27]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "name" : "products\/N9040B\/mini.png",
+      "capturerect" : [
+        284,
+        557,
+        56,
+        56
+      ]
+    },
+    {
+      "connectionserverid" : "10.211.55.3",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "capturedocrtext" : "MB",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Smoothed for Text",
+        "Discrepancy" : "_0",
+        "Tolerance" : "_71",
+        "HotSpot" : "[28,27]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "name" : "products\/N9040B\/mini.png",
+      "capturerect" : [
+        284,
+        557,
+        56,
+        56
+      ]
+    },
+    {
+      "name" : "products\/N9040B\/mini.png",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : " 0.75",
+        "SearchType" : "Smoothed for Text",
+        "Discrepancy" : "_0",
+        "Tolerance" : "_67",
+        "HotSpot" : "[21,20]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "connectionserverid" : "10.211.55.3",
+      "capturerect" : [
+        284,
+        557,
+        42,
+        42
+      ]
+    }
+  ],
+  "createddate" : 1660748026.6053181,
+  "lastfoundlocation" : [
+    712,
+    784,
+    42,
+    42
+  ],
+  "originalcapturelocation" : [
+    284,
+    557,
+    56,
+    56
+  ],
+  "lastfounddate" : 1663691690.595459,
+  "name" : "products\/N9040B UXA Signal Analyzer\/mini"
+}

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<statistics>
+ <script name="core">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>1</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2022-09-28 16:16:34 +0100</FirstRun>
+  <LastRun>2022-09-28 16:16:34 +0100</LastRun>
+  <TotalTimeOnSuccess>0.012502</TotalTimeOnSuccess>
+ </script>
+ <script name="testCases/productCatalog_TC">
+  <LastStatus>Failure</LastStatus>
+  <NumberOfRuns>25</NumberOfRuns>
+  <NumberOfFails>20</NumberOfFails>
+  <FirstRun>2022-09-02 12:24:35 +0100</FirstRun>
+  <LastRun>2022-09-09 07:53:18 +0100</LastRun>
+  <TotalTimeOnSuccess>1287.005620</TotalTimeOnSuccess>
+ </script>
+ <script name="testCases/series_TC">
+  <LastStatus>Failure</LastStatus>
+  <NumberOfRuns>124</NumberOfRuns>
+  <NumberOfFails>103</NumberOfFails>
+  <FirstRun>2022-08-22 11:59:38 +0100</FirstRun>
+  <LastRun>2022-09-08 16:53:19 +0100</LastRun>
+  <TotalTimeOnSuccess>3890.059201</TotalTimeOnSuccess>
+ </script>
+ <script name="testCases/excelDemo">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>3</NumberOfRuns>
+  <NumberOfFails>1</NumberOfFails>
+  <FirstRun>2022-11-24 13:04:00 +0000</FirstRun>
+  <LastRun>2022-11-24 13:13:12 +0000</LastRun>
+  <TotalTimeOnSuccess>263.419389</TotalTimeOnSuccess>
+ </script>
+ <script name="runner">
+  <LastStatus>Failure</LastStatus>
+  <NumberOfRuns>215</NumberOfRuns>
+  <NumberOfFails>163</NumberOfFails>
+  <FirstRun>2022-09-02 11:23:48 +0100</FirstRun>
+  <LastRun>2022-09-30 15:39:06 +0100</LastRun>
+  <TotalTimeOnSuccess>27439.849818</TotalTimeOnSuccess>
+ </script>
+ <script name="testCases/SAAP_TC">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>50</NumberOfRuns>
+  <NumberOfFails>32</NumberOfFails>
+  <FirstRun>2022-08-17 15:30:17 +0100</FirstRun>
+  <LastRun>2022-09-01 14:15:38 +0100</LastRun>
+  <TotalTimeOnSuccess>6917.500147</TotalTimeOnSuccess>
+ </script>
+ <script name="testCases/customConfig_TC">
+  <LastStatus>Failure</LastStatus>
+  <NumberOfRuns>11</NumberOfRuns>
+  <NumberOfFails>8</NumberOfFails>
+  <FirstRun>2022-09-02 15:56:43 +0100</FirstRun>
+  <LastRun>2022-09-09 08:26:05 +0100</LastRun>
+  <TotalTimeOnSuccess>235.410707</TotalTimeOnSuccess>
+ </script>
+</statistics>

@@ -1,0 +1,73 @@
+{
+  "lastmodifieddate" : 1662394362.7410741,
+  "testlocationdata" : [
+    {
+      "name" : "icons\/refresh\/refreshIncog.png",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Tolerant of Background",
+        "Discrepancy" : "_0",
+        "Tolerance" : "_45",
+        "HotSpot" : "[6,12]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "connectionserverid" : "10.211.55.3",
+      "capturerect" : [
+        78,
+        44,
+        16,
+        16
+      ]
+    },
+    {
+      "connectionserverid" : "10.211.55.3",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "capturedocrtext" : "ft",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : " 0.65",
+        "SearchType" : "Smoothed for Text",
+        "Discrepancy" : "_0",
+        "Tolerance" : "_63",
+        "HotSpot" : "[3,7]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "name" : "icons\/refresh\/refreshIncog.png",
+      "capturerect" : [
+        78,
+        44,
+        10,
+        10
+      ]
+    }
+  ],
+  "createddate" : 1662131287.9103761,
+  "lastfoundlocation" : [
+    78,
+    44,
+    16,
+    16
+  ],
+  "originalcapturelocation" : [
+    78,
+    44,
+    16,
+    16
+  ],
+  "lastfounddate" : 1662709825.48334,
+  "name" : "icons\/refresh\/refreshIncog"
+}

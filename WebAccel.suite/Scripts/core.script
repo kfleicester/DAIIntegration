@@ -1,0 +1,263 @@
+﻿to setup inpLang
+	//setting universal parameters where necessary
+	set the remoteWorkInterval to 0.3
+	set universal pageWait to 20 //mark had 10
+	set universal screenshotPath to the resourcepath & slash &"screenshots" & slash & the abbrev date & slash
+	if inplang is empty
+		set universal language to "English"
+		log "Chosen language is English"
+	else
+		set universal language to inpLang
+		log "Chosen language is " & inplang
+		//	set the language to inpLang
+	end if
+	waitfor universal pageWait, "logos/winStart"
+end setup
+
+to launchURL browser,url
+	log "Opening " & url & " using " & browser
+	set universal browser to browser
+	typetext windowskey,"r"
+	wait 0.6
+	waitfor 10, text:"Type the"
+	typetext browser&&url
+	wait 0.5
+	typetext returnkey
+	typetext windowskey, upArrow
+	waitfor universal pageWait, "logos/keysight"
+end launchURL
+
+
+
+to closeBrowser
+	log "Close browser shortcut"
+	typetext controlkey,shiftkey,"w"
+	wait 2
+	log "Reverting language to English"
+	set the language to English
+end closeBrowser
+
+to closeTab expectation
+	log "Close tab shortcut"
+	typetext controlkey,"w"
+	wait 1
+	if expectation is not empty
+		navigate(),(expectation)
+	end if 
+	
+end closeTab
+
+to back expectation
+	log "Back shortcut"
+	wait 0.5
+	typetext altkey,leftarrow
+	//waitfor refresh then remove the below one
+	if expectation is not empty
+		Try
+			wait 0.5
+			pageLoad
+			navigate(),(expectation)
+		Catch theException
+			log "unable to find validation on return page, returning to the top and searching again"
+			typetext controlkey, homeKey
+			wait 0.6
+			//scrollto instead?
+			scrollto (expectation)
+			navigate[],(expectation)
+		End try
+	end if 
+	wait 3
+end back
+
+
+to scrollTo toFind, section
+	//log "Beginning search for " & toFind
+	if section is empty then set section to universal browser
+	// Images 
+	if file (suiteinfo().imagesFolder&"/"&toFind&".png") exists
+		repeat until imagefound(0,image:toFind,searchRectangle:(config().SUT.(section)))
+			ScrollWheelDown 5
+			wait 1
+			screenScroll (toFind), (repeatindex())
+			if repeatindex() > 20 then 
+				logwarning "Cannot find"&&toFind
+				//scrollSave
+				Exit repeat
+			end if
+		end repeat
+	else
+		// OCR
+		//log the textstyle
+		set searchOcr to getOCRProperty(toFind)
+		repeat until imagefound (0, searchOcr)
+			//repeat until imagefound(waitfor:0,text:languageLookup(toFind),searchRectangle:(config().SUT.(section)),language: universal language & ", English", ignoreNewlines:on, ignorespaces:on, DPI:144)
+			ScrollWheelDown 6
+			wait 1.5
+			screenScroll (toFind), (repeatindex())
+			if repeatindex() > 15 then 
+				logwarning "Cannot find"&&toFind
+				//scrollSave
+				Exit repeat
+			end if
+		end repeat
+	end if
+	return foundimageinfo().imageRectangle 
+	//scrollDelete
+end scrollTo
+
+to goTo action
+	moveto the center of core.scrollTo(action)
+	//if universal language is "Japanese"
+	wait 0.3
+	moveto MouseLocation() - [0,100] //incrementing for japan
+	//end if
+	
+end goTo
+
+navigate ("View All")
+
+to navigate action,expectation, section
+
+
+	// do something 
+	if action is not empty
+		click the center of core.scrollTo(action, section)
+		wait 2
+		set the textStyle to default
+	end if 
+	// check something
+	if expectation is not empty
+		wait 1
+		validate expectation
+	end if
+	wait 1
+end navigate
+
+to textEntry label,input
+	doubleclick CenterLeft of scrollTo(label) + (200,0)
+	wait 0.5
+	typetext controlkey,"a"
+	wait 0.4
+	typetext input,escapeKey
+	wait 0.3
+end textEntry
+
+to carouselRight toFind, expectation
+	log "Cycling through carousel to find "&tofind
+	//repeat until imagefound(0,text:languageLookup(toFind),searchRectangle:(config().SUT.(universal browser)),language: "English,"&universal language, ignorespaces:on, DPI:144,ValidCharacters:"*")
+	repeat until imagefound(0,getOCRProperty(toFind))
+		if repeatIndex() > 10
+			logwarning ["unable to find carousel target " & toFind && the time]
+			exit carouselRight
+		end if
+		click image:"icons/carousel/Right"
+		wait 1
+	end repeat
+	logsuccess tofind&&"found"
+	
+	//validate
+	if expectation is not empty
+		click FoundImageLocation()
+		wait 0.5
+		validate expectation
+	end if 
+end carouselRight
+
+to validate expectation
+
+
+	log "Validating existance of " & expectation
+	
+	if file (suiteinfo().imagesFolder&"/"&expectation&".png") exists
+		waitfor universal pageWait, image:expectation
+	else
+		//waitfor universal pageWait,text:languageLookup(expectation),searchRectangle:(config().SUT.(universal browser)),language:universal language & ", English",ignoreNewlines:on, ignorespaces:on
+		waitfor universal pageWait,getOCRProperty(expectation)
+	end if 
+	moveto (bottomCenter of the RemoteScreenRectangle- (0,300))
+	
+	//take a screenshot
+	replace every occurrence of ":" in expectation with "_"
+	CaptureScreen {Name: universal screenshotPath & expectation && the hour && the minute }
+	logsuccess "Validation passed"
+	return true
+end validate
+
+to languageLookup lookUp
+	if universal language is "english"
+		set outVar to lookUp
+	else
+		log "translating " &lookup
+		set myExcelDB to {type: "excel", file: universal langFile}
+		put the records of myExcelDB into tempFile
+		//log tempFile
+		set outVar to (each item of tempFile whose "English" is lookup considering case).(universal language)
+		if outVar is empty then set outVar to lookUp
+	end if
+	log outVar
+	return outVar
+end languageLookup
+
+to textField fieldName, inp
+	navigate fieldName
+	typetext controlkey, "a"
+	typetext inp
+	wait 0.5
+end textField
+
+to inspect action
+	typetext controlkey, shiftkey, "i"
+	if action is "Open"
+		validate ("Element")
+	end if
+end inspect
+
+to pageLoad
+	wait 0.5
+	waitfor universal pageWait, image:"icons/refresh"
+end pageLoad
+
+to copyAndLog
+	typetext controlkey, "c"
+	log the remoteclipboard
+end copyAndLog
+
+
+///new functions to assist scrolling and take screenshots
+to screenScroll screenName, iter
+	//a fucntion to put screenshots for each scroll
+	CaptureScreen {Name: universal screenshotPath & slash & "scrollCaptures" & slash & screenName & slash & iter}
+	
+end screenScroll
+
+to scrollSave
+	Copy file universal screenshotPath & slash & "scrollCaptures" to universal screenshotPath & slash & "scrolls" && the hour && the minute
+end scrollSave
+
+to scrollDelete
+	delete file universal screenshotPath & slash & "scrollCaptures"
+end scrollDelete
+
+
+
+
+to getOCRProperty expectation
+	set searchKey to languageLookup(expectation)
+	
+	if expectation is searchKey
+		return {text:expectation, dpi:"144", searchRectangle:(config().SUT.(universal browser)),language: "English,"&universal language, ignorespaces:on}
+	end if
+	
+	if searchKey is a list
+		repeat with each octText of searchKey
+			set myOcrProperty to {text:octText, dpi:"144", searchRectangle:(config().SUT.(universal browser)),language: "English,"&universal language, ignorespaces:on,textDifference:1,ignoreNewlines:on}
+			insert  myOcrProperty after res 
+		end repeat
+		return res
+	else
+		return {text:searchKey, dpi:"144", searchRectangle:(config().SUT.(universal browser)),language: "English,"&universal language, ignorespaces:on,textDifference:1,ignoreNewlines:on}
+		
+	end if
+	
+end getOCRProperty
+

@@ -1,0 +1,22 @@
+﻿params browser, country
+//Start using Omega13
+set universal langFile to ResourcePath("catalog_Lookup.xlsx")
+try
+	
+	"DAIWrappers/kCom".launchKcom (browser), (country)
+	"DAIWrappers/mainPage".launchAllAnalyzers
+	"DAIWrappers/catalogPage".toggleFilterBy 
+	"DAIWrappers/catalogPage".quickView
+	"DAIWrappers/catalogPage".quickviewQuote
+	"DAIWrappers/catalogPage".evalFilters
+	"DAIWrappers/catalogPage".compareJourney
+	"DAIWrappers/catalogPage".seeBuyOptions
+	"DAIWrappers/catalogPage".buyOnlineAndGetQuote
+	
+	core.closeBrowser
+	
+catch
+	CaptureScreen {Name: universal screenshotPath & "Error" && the hour && the minute }
+	core.closeBrowser
+	logerror "script failed"
+end try

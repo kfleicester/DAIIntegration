@@ -1,0 +1,19 @@
+﻿{
+    CaptureDate = "2022-08-17 14:32:59 +0000";
+    CaptureHost = "LOCAL";
+    CaptureScreenSize = (
+        1024,
+        768);
+    HasAlpha = 1;
+    HotSpotX = 15;
+    HotSpotY = 16;
+    LastKnownLocationX = 0;
+    LastKnownLocationY = 0;
+    OriginalLocationX = 909;
+    OriginalLocationY = 96;
+    Precise = 0;
+    Pulsing = 0;
+    Scale = 1;
+    SearchObjectName = "icons/country";
+    tags = ();
+}

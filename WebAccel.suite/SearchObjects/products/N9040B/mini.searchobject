@@ -1,0 +1,75 @@
+{
+  "lastmodifieddate" : 1663745951.6137171,
+  "ocrcapturestring" : "*—7",
+  "testlocationdata" : [
+    {
+      "connectionserverid" : "10.211.55.3",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "capturedocrtext" : "*—7",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Tolerant of Background",
+        "Discrepancy" : "_0",
+        "Tolerance" : 50,
+        "HotSpot" : "[19,16]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "name" : "products\/N9040B\/mini.png",
+      "capturerect" : [
+        715,
+        787,
+        39,
+        33
+      ]
+    },
+    {
+      "connectionserverid" : "10.211.55.3",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "capturedocrtext" : "*—7",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Tolerant of Background",
+        "Discrepancy" : "_0",
+        "Tolerance" : 100,
+        "HotSpot" : "[19,16]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "name" : "products\/N9040B\/mini.png",
+      "capturerect" : [
+        715,
+        787,
+        39,
+        33
+      ]
+    }
+  ],
+  "createddate" : 1663707917.9823141,
+  "lastfoundlocation" : [
+    573,
+    446,
+    19,
+    13
+  ],
+  "originalcapturelocation" : [
+    715,
+    787,
+    39,
+    33
+  ],
+  "lastfounddate" : 1663747890.1760211,
+  "name" : "products\/N9040B\/mini"
+}

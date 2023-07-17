@@ -1,0 +1,48 @@
+{
+  "lastmodifieddate" : 1663708335.283426,
+  "ocrcapturestring" : "• • • • • • ■-    a",
+  "testlocationdata" : [
+    {
+      "connectionserverid" : "10.211.55.3",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "capturedocrtext" : "• • • • • • ■-    a",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Tolerant of Background",
+        "Discrepancy" : "_0",
+        "Tolerance" : 55,
+        "HotSpot" : "[138,41]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "name" : "products\/N9040B\/interestedProduct.png",
+      "capturerect" : [
+        517,
+        709,
+        264,
+        154
+      ]
+    }
+  ],
+  "createddate" : 1663708335.283426,
+  "lastfoundlocation" : [
+    517,
+    301,
+    264,
+    154
+  ],
+  "originalcapturelocation" : [
+    517,
+    709,
+    264,
+    154
+  ],
+  "lastfounddate" : 1663745456.4067202,
+  "name" : "products\/N9040B\/interestedProduct"
+}

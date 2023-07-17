@@ -1,0 +1,107 @@
+﻿to toggleFilterBy
+	wait 0.5
+	core.navigate ("FILTER BY")
+	core.Navigate ("icons/collapseFilter"), ("HIDE FILTER")
+	
+end toggleFilterBy
+
+to quickView
+	core.goTo ("Compare")
+	core.navigate ("Quick View"), ("Data Sheets")
+	core.navigate ("icons/closePopUp")
+	core.navigate ("icons/backToTop"),("logos/keysight")
+end quickView
+
+to quickviewQuote
+	core.goTo ("Compare")
+	core.navigate ("Quick View")
+	Try
+		core.validate("Data Sheets")
+	Catch 
+		//	validation word can change on product
+		core.validate("Technical Specifications")
+	End try
+	
+	core.validate("Data Sheets")
+	"DAIWrappers/kCom".getTS ("PopUp") //firefox no?
+	openQuote
+	"DAIWrappers/kCom".getTS ("Default")
+	core.back ("icons/backToTop")
+	core.navigate ("icons/backToTop"),("logos/keysight")
+end quickviewQuote
+
+to evalFilters
+	core.navigate ("Basic Spectrum Analyzers")
+	core.navigate ("Reset"), ("Modular PXI")
+	scrollwheeldown 2
+	wait 1
+	core.navigate ("Frequency"), ("50 GHz")
+	"DAIWrappers/kCom".moveSlider
+	"DAIWrappers/kCom".getTS ("PopUp")
+	core.validate ("Get Quote")
+	"DAIWrappers/kCom".getTS ("Default")
+	core.navigate ("DANL"), ,("filterSection")
+	core.navigate ("-174"), ,("filterSection")
+	core.navigate ("Reset"), ("Modular PXI")
+	core.navigate ("icons/backToTop"),("logos/keysight")
+end evalFilters
+
+to compareJourney
+	compareproducts
+	if checkBuyOnline()
+		core.navigate ("Buy Online"),("Add to Cart")
+		core.navigate ("icons/closePopUp")
+		openQuote
+		core.back ("Compare Products")
+	end if
+	core.back ("FILTER BY")
+end compareJourney
+
+to seeBuyOptions
+	core.navigate ("See Buy or Rent Options"), ("How to Buy")
+	core.back ("FILTER BY")
+end seeBuyOptions
+
+to buyOnlineAndGetQuote
+
+	if checkBuyOnline()
+		core.navigate ("Buy Online"),("Add to Cart")
+		core.navigate ("icons/closePopUp")
+		openQuote
+	end if
+	
+	
+end buyOnlineAndGetQuote
+
+to checkBuyOnline
+	try
+		put core.validate ("Buy Online")
+		return true
+	catch
+		return false
+		logwarning "No Buy Online found"
+	end try
+end checkBuyOnline
+
+
+
+to openQuote
+	//"DAIWrappers/kcom".getTS("Default")
+	core.Navigate ("Get Quote")
+	Try 
+		core.validate ("Select a configuration")
+		core.navigate ("Next"),("Current Locale") //"Quote Checkout"
+	Catch theException
+		core.validate ("Current Locale")
+	End try
+end openQuote
+
+
+to compareProducts
+	put EveryImageLocation(text:core.languageLookup("Compare"),searchRectangle:(config().SUT.(section)),language: universal language & ", English", ignoreNewlines:on, ignorespaces:on, waitfor:0) into compList
+	repeat with each item in compList
+		click it
+	end repeat
+	core.navigate ("Compare"), ("Compare Products")
+end compareProducts
+

@@ -1,0 +1,13 @@
+﻿{
+    EPVersionNumber = 202306201133;
+    PostRunScript = "core.script";
+    Schedules =     (
+    );
+    ScriptMetaData =     {
+    };
+    SuiteEncodedTextKey = "#G2y+p48`)<%ZlJi";
+    helpedSuitesInfo =     (
+    );
+    helperSuitesInfo =     (
+    );
+}

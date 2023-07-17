@@ -1,0 +1,183 @@
+{
+  "lastmodifieddate" : 1662654320.620095,
+  "ocrcapturestring" : "o",
+  "testlocationdata" : [
+    {
+      "connectionserverid" : "10.211.55.3",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "capturedocrtext" : "o",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : " 0.85",
+        "SearchType" : "Smoothed for Text",
+        "Discrepancy" : "_0",
+        "Tolerance" : 85,
+        "HotSpot" : "[11,13]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "name" : "icons\/refresh\/refreshEdge.png",
+      "capturerect" : [
+        62,
+        40,
+        18,
+        18
+      ]
+    },
+    {
+      "connectionserverid" : "10.211.55.3",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "capturedocrtext" : "o",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Smoothed for Text",
+        "Discrepancy" : "_0",
+        "Tolerance" : 85,
+        "HotSpot" : "[14,16]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "name" : "icons\/refresh\/refreshEdge.png",
+      "capturerect" : [
+        62,
+        40,
+        22,
+        22
+      ]
+    },
+    {
+      "connectionserverid" : "10.211.55.3",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "capturedocrtext" : "o",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Smoothed for Text",
+        "Discrepancy" : "_0",
+        "Tolerance" : 95,
+        "HotSpot" : "[14,16]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "name" : "icons\/refresh\/refreshEdge.png",
+      "capturerect" : [
+        62,
+        40,
+        22,
+        22
+      ]
+    },
+    {
+      "connectionserverid" : "10.211.55.3",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "capturedocrtext" : "0",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : " 0.95",
+        "SearchType" : "Smoothed for Text",
+        "Discrepancy" : "_0",
+        "Tolerance" : 95,
+        "HotSpot" : "[12,14]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "name" : "icons\/refresh\/refreshEdge.png",
+      "capturerect" : [
+        62,
+        40,
+        20,
+        20
+      ]
+    },
+    {
+      "connectionserverid" : "10.211.55.3",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "capturedocrtext" : "0",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : " 0.95",
+        "SearchType" : "Smoothed for Text",
+        "Discrepancy" : "_0",
+        "Tolerance" : 100,
+        "HotSpot" : "[12,14]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "name" : "icons\/refresh\/refreshEdge.png",
+      "capturerect" : [
+        62,
+        40,
+        20,
+        20
+      ]
+    },
+    {
+      "connectionserverid" : "10.211.55.3",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "capturedocrtext" : "0",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : " 0.95",
+        "SearchType" : "Smoothed for Text",
+        "Discrepancy" : "_0",
+        "Tolerance" : 85,
+        "HotSpot" : "[12,14]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "name" : "icons\/refresh\/refreshEdge.png",
+      "capturerect" : [
+        62,
+        40,
+        20,
+        20
+      ]
+    }
+  ],
+  "createddate" : 1662462138.877708,
+  "lastfoundlocation" : [
+    63,
+    41,
+    20,
+    20
+  ],
+  "originalcapturelocation" : [
+    62,
+    40,
+    18,
+    18
+  ],
+  "lastfounddate" : 1669295673.2041621,
+  "name" : "icons\/refresh\/refreshEdge2"
+}

@@ -1,0 +1,102 @@
+{
+  "lastmodifieddate" : 1662023467.6876101,
+  "ocrcapturestring" : "o",
+  "testlocationdata" : [
+    {
+      "connectionserverid" : "10.211.55.3",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "capturedocrtext" : "o",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Tolerant of Background",
+        "Discrepancy" : "_0",
+        "Tolerance" : "_45",
+        "HotSpot" : "[14,16]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "name" : "icons\/refresh\/refreshEdge.png",
+      "capturerect" : [
+        62,
+        40,
+        22,
+        22
+      ]
+    },
+    {
+      "connectionserverid" : "10.211.55.3",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "capturedocrtext" : "o",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : " 0.85",
+        "SearchType" : "Smoothed for Text",
+        "Discrepancy" : "_0",
+        "Tolerance" : "_65",
+        "HotSpot" : "[11,13]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "name" : "icons\/refresh\/refreshEdge.png",
+      "capturerect" : [
+        62,
+        40,
+        18,
+        18
+      ]
+    },
+    {
+      "connectionserverid" : "10.211.55.3",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "capturedocrtext" : "o",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : " 0.85",
+        "SearchType" : "Smoothed for Text",
+        "Discrepancy" : "_0",
+        "Tolerance" : 70,
+        "HotSpot" : "[11,13]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "name" : "icons\/refresh\/refreshEdge.png",
+      "capturerect" : [
+        62,
+        40,
+        18,
+        18
+      ]
+    }
+  ],
+  "createddate" : 1661942446.4375429,
+  "lastfoundlocation" : [
+    88,
+    57,
+    17,
+    17
+  ],
+  "originalcapturelocation" : [
+    62,
+    40,
+    22,
+    22
+  ],
+  "lastfounddate" : 1662023490.873467,
+  "name" : "icons\/refresh\/refreshEdge"
+}}

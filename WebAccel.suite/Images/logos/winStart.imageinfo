@@ -1,0 +1,21 @@
+﻿{
+    CaptureDate = "2022-08-26 12:06:09 +0000";
+    CaptureHost = "win10RDP";
+    CaptureScreenSize = (
+        "1920",
+        "1080");
+    HasAlpha = 1;
+    HotSpotX = 15;
+    HotSpotY = 9;
+    ImageDescription = <>;
+    ImageTolerance = 70;
+    LastKnownLocationX = 0;
+    LastKnownLocationY = 0;
+    OriginalLocationX = 15;
+    OriginalLocationY = 1051;
+    Precise = 0;
+    Pulsing = 0;
+    Scale = 1;
+    SearchObjectName = "logos/winStart";
+    tags = ();
+}

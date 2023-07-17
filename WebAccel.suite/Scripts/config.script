@@ -1,0 +1,57 @@
+﻿return { 
+
+	SUT:{
+		chrome:[0,73,1919,1035],
+		"chrome -incognito":[0,73,1919,1035],
+		msedge:[0,79,1919,1039],
+		"msedge -inprivate":[0,79,1919,1039],
+		firefox:[0,88,1920,1040],
+		"firefox -private":[0,88,1920,1040],
+		filterSection:[284,85,702,1041],
+		countrySection:[1130,101,1568,464]
+	},
+	
+	TStyle:{
+		popUp:{contrast:"On", contrastColor:"#FFFFFF", contrastTolerance:"50"},
+		redButton:{contrast:"On", contrastColor:"#F00129", contrastTolerance:"50", textDifference:1},
+		white:{ contrast:"On", contrastColor:"#FFFFFF", contrastTolerance:"30", textDifference:1},
+		Default:{contrast:"Off"},
+	},
+	
+	screenPart:{
+		
+		TopHalf: [[0,0],[1,.5]] * [the remoteScreenSize,the remotescreenSize],
+		BottomHalf: [[0,.5],[1,1]]* [the remoteScreenSize,the remotescreenSize],
+		LeftHalf: [[0,0],[.5,1]] * [the remoteScreenSize,the remotescreenSize],
+		RightHalf: [[.5,0],[1,1]] * [the remoteScreenSize,the remotescreenSize],
+		HorizontalMiddle: [[0,.25],[1,.75]] * [the remoteScreenSize,the remotescreenSize],
+		VerticalMiddle:[[.25,0],[.75,1]]* [the remoteScreenSize,the remotescreenSize],
+		TopLeft:[[0,0],[.5,.5]]* [the remoteScreenSize,the remotescreenSize],
+		TopRight:[[.5,0],[1,.5]]* [the remoteScreenSize,the remotescreenSize],
+		BottomLeft:[[0,.5],[.5,1]]* [the remoteScreenSize,the remotescreenSize],
+		BottomRight:[[.5,.5],[1,1]]* [the remoteScreenSize,the remotescreenSize],
+		Center:[[.25,.25],[.75,.75]]* [the remoteScreenSize,the remotescreenSize]
+	
+	}
+
+
+
+}
+
+(5,80,237,1039)
+
+
+return {
+
+	browsers:{
+		chrome:[],
+		firefox:[],
+		msedge:[]
+	},
+	
+	sections:{
+		sideMenu:[5,80,237,1039],
+		topMenu:[232,71,1905,184]
+	}
+
+}

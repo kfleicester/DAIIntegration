@@ -1,0 +1,20 @@
+﻿{
+    CaptureDate = "2022-08-22 15:21:50 +0000";
+    CaptureHost = "win10RDP";
+    CaptureScreenSize = (
+        "1920",
+        "1080");
+    HasAlpha = 1;
+    HotSpotX = 10;
+    HotSpotY = 6;
+    ImageDescription = <>;
+    LastKnownLocationX = 0;
+    LastKnownLocationY = 0;
+    OriginalLocationX = 1474;
+    OriginalLocationY = 96;
+    Precise = 0;
+    Pulsing = 0;
+    Scale = 1;
+    SearchObjectName = "icons/selectLanguage";
+    tags = ();
+}

@@ -1,0 +1,49 @@
+{
+  "lastmodifieddate" : 1662023506.4399829,
+  "ocrcapturestring" : "c",
+  "testlocationdata" : [
+    {
+      "connectionserverid" : "10.211.55.3",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "deleted" : true,
+      "connectiontype" : "RDP",
+      "capturedocrtext" : "c",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Tolerant of Background",
+        "Discrepancy" : "_0",
+        "Tolerance" : "_45",
+        "HotSpot" : "[11,12]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "name" : "icons\/refresh\/refreshChrome.png",
+      "capturerect" : [
+        77,
+        42,
+        20,
+        20
+      ]
+    }
+  ],
+  "createddate" : 1661430712.9368019,
+  "lastfoundlocation" : [
+    77,
+    42,
+    20,
+    20
+  ],
+  "originalcapturelocation" : [
+    77,
+    42,
+    20,
+    20
+  ],
+  "lastfounddate" : 1662022529.6140809,
+  "name" : "icons\/refresh"
+}

@@ -1,0 +1,19 @@
+﻿to launchXSeries
+	"DAIWrappers/kCom".getTS ("white")
+	core.navigate ("PRODUCTS + SERVICES"), ("Oscilloscopes + Analyzers")
+	core.navigate ("Oscilloscopes + Analyzers")
+	core.navigate ("Spectrum Analyzers (Signal Analyzers)"),("Products And Services")
+	core.navigate ("X-Series Signal Analyzers"), ("Spectrum Analyzers (Signal Analyzers)")
+end launchXSeries
+
+to launchAllAnalyzers
+	"DAIWrappers/kCom".getTS ("white")
+	core.navigate ("PRODUCTS + SERVICES"), ("Oscilloscopes + Analyzers")
+	core.navigate ("Oscilloscopes + Analyzers")
+	core.navigate ("Spectrum Analyzers (Signal Analyzers)"),("Products And Services")
+	core.scrollTo ("X-Series Signal Analyzers")//
+	scrollwheeldown 1
+	wait 0.5
+	core.carouselRight ("View All"), ("Product Catalog")
+	wait 0.5
+end launchAllAnalyzers

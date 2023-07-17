@@ -1,0 +1,49 @@
+{
+  "lastmodifieddate" : 1662023512.734982,
+  "ocrcapturestring" : "c",
+  "testlocationdata" : [
+    {
+      "connectionserverid" : "10.211.55.3",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "deleted" : true,
+      "connectiontype" : "RDP",
+      "capturedocrtext" : "c",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Tolerant of Background",
+        "Discrepancy" : "_0",
+        "Tolerance" : "_45",
+        "HotSpot" : "[10,13]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "name" : "icons\/refresh\/refreshFirefox.png",
+      "capturerect" : [
+        87,
+        55,
+        20,
+        20
+      ]
+    }
+  ],
+  "createddate" : 1661952651.368634,
+  "lastfoundlocation" : [
+    87,
+    55,
+    20,
+    20
+  ],
+  "originalcapturelocation" : [
+    87,
+    55,
+    20,
+    20
+  ],
+  "lastfounddate" : 1661953221.7038369,
+  "name" : "icons\/refresh\/refreshFirefox"
+}

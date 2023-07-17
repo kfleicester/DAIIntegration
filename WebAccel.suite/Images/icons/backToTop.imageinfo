@@ -1,0 +1,24 @@
+﻿{
+    CaptureDate = "2022-08-17 15:10:07 +0000";
+    CaptureHost = "LOCAL";
+    CaptureScreenSize = (
+        "1024",
+        "768");
+    HasAlpha = 1;
+    HotSpotX = 17;
+    HotSpotY = 16;
+    ImageDescription = <>;
+    KeepColor = "#080C08";
+    KeepColorTolerance = 100;
+    LastKnownLocationX = 0;
+    LastKnownLocationY = 0;
+    MaxIgnoredPixels = 12;
+    OriginalLocationX = 957;
+    OriginalLocationY = 669;
+    Precise = 0;
+    Pulsing = 0;
+    Scale = 1;
+    SearchAlgorithm = "TextSmoothSquare";
+    SearchObjectName = "icons/backToTop";
+    tags = ();
+}

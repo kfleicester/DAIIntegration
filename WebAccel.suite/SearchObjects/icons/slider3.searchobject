@@ -1,0 +1,46 @@
+{
+  "lastmodifieddate" : 1662653831.2628841,
+  "testlocationdata" : [
+    {
+      "name" : "icons\/slider.png",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Precise to Pixel",
+        "Discrepancy" : "_0",
+        "Tolerance" : "_1",
+        "HotSpot" : "[7,5]",
+        "CropRectangle" : "[5,5,20,16]"
+      },
+      "type" : 1,
+      "connectionserverid" : "10.211.55.3",
+      "capturerect" : [
+        372,
+        866,
+        15,
+        11
+      ]
+    }
+  ],
+  "createddate" : 1662653831.2628841,
+  "lastfoundlocation" : [
+    354,
+    724,
+    15,
+    11
+  ],
+  "originalcapturelocation" : [
+    372,
+    866,
+    15,
+    11
+  ],
+  "lastfounddate" : 1664546060.1282549,
+  "name" : "icons\/slider3"
+}

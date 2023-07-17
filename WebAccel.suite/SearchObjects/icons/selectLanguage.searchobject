@@ -1,0 +1,48 @@
+{
+  "lastmodifieddate" : 1661181740.1679389,
+  "ocrcapturestring" : "' i . al ll*. J",
+  "testlocationdata" : [
+    {
+      "connectionserverid" : "10.211.55.3",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "capturedocrtext" : "' i . al ll*. J",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Tolerant of Background",
+        "Discrepancy" : "_0",
+        "Tolerance" : "_45",
+        "HotSpot" : "[10,6]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "name" : "icons\/selectRegion.png",
+      "capturerect" : [
+        1474,
+        96,
+        20,
+        20
+      ]
+    }
+  ],
+  "createddate" : 1661181729.071064,
+  "lastfoundlocation" : [
+    1473,
+    96,
+    20,
+    20
+  ],
+  "originalcapturelocation" : [
+    1474,
+    96,
+    20,
+    20
+  ],
+  "lastfounddate" : 1669295662.459764,
+  "name" : "icons\/selectLanguage"
+}

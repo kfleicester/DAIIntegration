@@ -1,0 +1,46 @@
+{
+  "lastmodifieddate" : 1660746607.8693581,
+  "testlocationdata" : [
+    {
+      "name" : "logos\/keysight.png",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "LOCAL",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Tolerant of Background",
+        "Discrepancy" : "_0",
+        "Tolerance" : "_45",
+        "HotSpot" : "[21,16]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "connectionserverid" : "10.211.55.3",
+      "capturerect" : [
+        35,
+        156,
+        46,
+        37
+      ]
+    }
+  ],
+  "createddate" : 1660746607.8693581,
+  "lastfoundlocation" : [
+    367,
+    90,
+    46,
+    37
+  ],
+  "originalcapturelocation" : [
+    35,
+    156,
+    46,
+    37
+  ],
+  "lastfounddate" : 1669295659.340389,
+  "name" : "logos\/keysight"
+}

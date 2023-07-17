@@ -1,0 +1,31 @@
+﻿Language,English,ChinesePRC,Japanese,PortugueseBrazilian,Korean,German,ChineseTaiwan,Russian
+Maincategory,PRODUCTS + SERVICES,产品与服务,サービス,Produtos + Serviços,제품,Produkte & Service,產品與服務,Продукты и услуги
+Subcategory1,Oscilloscopes,示波器和分析仪,オシロス,Osciloscópios,오실로스,Oszilloskope,示波器與分析儀,Осциллографы и анализаторы
+subcategory2,Spectrum Analyzers,频谱,スペクトラ,Analisadores de espectro,스펨트럼 분,Spektrumanalysatoren,頻譜分析儀,Spectrum Analyzers
+waitText,PRODUCTS AND SERVICES,产品与服务,製品とサ,Produtos e Serviços,제품 및 서,Produkte und Services,產品與服務,Продукты и услуги
+SeriesProduct,X-Series Signal Analyzers,系列信号分,Xシリーズ シ,Analisadores de sinal da Série X,X-시리즈 신호 ,Signalanalysatoren der X-Serie,X 系列信號,X-Series Signal Analyzers
+Brochure,View Brochure,查看手册,カタログを表示,Ver brochura,브로셔,Broschüre anzeigen,查閱型錄,Ознакомиться с брошюрой 
+VerifyBrochure,BROCHURE,手册,Keysight Technologies,BROCHURE,BROCHURE,BROCHURE,BROCHURE,Keysight Technologies
+RightProduct,RIGHT FOR YOU,查找适合您的型号,しょう,ENCONTRE O MODELO CERTO PARA,적합한 모델,FINDEN SIE DAS FÜR IHRE ANWENDUNG,搜尋符合您需求的機型,ПОДХОДЯЩУЮ ДЛЯ РЕШЕНИЯ ВАШИХ ЗАДАЧ
+VisitTechSupport,Visit Technical Support,访问技术支持,テクニカル・サポートを見る,Visite o Suporte,기술지원 방문하기 ,Zum technischen Support,瀏覽技術支援網頁 ,Перейти на страницу Технической поддержки 
+TechSupport,Request Service,技术支持,テクニカルサポート,Suporte técnico,기술 지원,Technische Unterstützung,技術支援,Техническая поддержка
+ViewCompare,View and Compare,查看比较所有型号,全モデルの表示と比較,Visualizar e comparar todos,모든 모델 보기 및 비교,Alle Modell anzeigen und vergleichen,查看並比較所有機型,Посмотреть и сравнить все модели
+Getquote,Get Quote,索取报价,ウェブ見積,Pedir cotação,견적 받기,Angebot anfordern,索取報價,Получить предложение
+SelectConfiguration,Select a configuration,Select a configuration,Select a configuration,Select a configuration,Select a configuration,nill,Select a configuration,Select a configuration
+NextText,Next,下一页,次へ,Avançar,다음,nill,下一頁,Следующие
+CheckoutText,Quote Checkout,报价,ウェブ見積のお手続き,Checar cotação,견적 요청,Price Request,確認報價,Запросить коммерческое
+Investment,YOUR SIGNAL,保护您的创新投资,イノベーションへの投資を確保,PROTEJA SEU INVESTIMENTO EM INOVAÇÃO,혁신적인 테스트 자산,SCHÜTZEN SIE IHRE INNOVATIONSINVESTITION,保護您的創新投資,ЗАЩИТА ИНВЕСТИЦИЙ В ИННОВАЦИОННЫЕ РАЗРАБОТКИ
+KeysightCare,KeysightCare,KeysightCare,KeysightCare,KeysightCare,KeysightCare,KeysightCare,KeysightCare,KeysightCare
+KeysightCareVerify,KeysightCare Service,KeysightCare,KeysightCare,KeysightCare,KeysightCare,KeysightCare Service,KeysightCare,Услуги и поддержка
+Calibration,Calibration Services,校准服务,校正サービス,Serviços de Calibração,교정 서비스,Calibration Services,校驗服務,Услуги поверки и калибровки
+CalibrationVerify,Calibration Services,仪器校准检测服务,校正サービス,calibração,서비스,Kalibrier-Services,校驗服務,Calibration Services
+TechRefresh,Tech Refresh Service,技术更新服务,テクノロジー リフレッシュ サービス,Serviços de atualização tecnológica,Tech Refresh,Tech Refresh Service,校驗服務,Услуги по обновлению технологий
+TechRefreshVerify,Tech Refresh,技术更新服务,テクノロジー ,Tech Refresh,Tech Refresh,Tech Refresh,Tech Refresh,Tech Refresh
+Featured,FEATURED SIGNAL ANALYSIS,特色,注目のリソース,RECURSOS EM DESTAQUE,주요 리소스,EMPFOHLENE RESSOURCEN,精選資源,РЕКОМЕНДУЕМЫЕ РЕСУРСЫ
+Resource,Brochures,Brochures,Brochures,Brochures,Brochures,Brochures,Brochures,Brochures
+waitTextResource,BROCHURE,BROCHURE,BROCHURE,BROCHURE,BROCHURE,BROCHURE,BROCHURE,BROCHURE
+AllResources,View All resources,查看所有资,すべてのリソ,Veja todos os recursos,모든 리소스 보기,Alle Ressourcen anzeigen,查看所有資源,Посмотреть все материалы
+ContactUS,Contact Us,联系我,お問い合わせはこちら,Entre em contato conosco,키사이트에 문의하기,Nehmen Sie,聯絡我們,Свяжитесь с нами
+TextDifference,0,1,1,1,1,1,1,1
+ValidCharacters,*,*,*,*,*,,*,*
+ATE,NO,YES,NO,NO,NO,NO,NO,NO

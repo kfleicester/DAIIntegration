@@ -1,0 +1,38 @@
+﻿
+
+set browserList to ["chrome"]//"chrome", "firefox", "msedge"
+set countryList to ["Japan"] //"United States", "Germany", "Japan"
+set SUTName to "win10RDP"
+Repeat with each item browser of browserList
+	Repeat with each item country of countryList
+		connect SUTName
+		"testCases/SAAP_TC".SAAP_TC (browser), (country)
+		"testCases/series_TC".series_TC (browser), (country)
+		"testCases/productCatalog_TC".productCatalog_TC (browser), (country)
+		
+		disconnect SUTName
+		wait 5
+	End repeat
+End repeat
+
+//click text:"Eggplant QA set GRC", ignoreSpaces:on
+
+log ReadText([771,565,904,605],Contrast:On,ContrastColor:"#ef0029",ContrastTolerance:45,EnableAggressiveTextExtraction:True,EnhanceLocalContrast:True,Language:"ChinesePRC",saveImageFile:"myButton.png")
+sa
+
+typetext "https://www.keysight.com.cn/cn/zh/assets/7018-06481/white-papers/5992-3625.pdf", returnKey
+
+
+click text:"缝续", contrast:"On", contrastColor:"#FFFFFF", contrastTolerance:"99", dpi:"144", Language:"ChinesePRC"
+
+log suiteinfo().imagesFolder&"/icons"
+
+repeat with each item in (suiteinfo().imagesFolder&"/icons/")
+	log repeatindex()
+end repeat
+
+
+put the files of (suiteinfo().imagesFolder&"/icons/") into myList
+
+log myFolderListVar
+

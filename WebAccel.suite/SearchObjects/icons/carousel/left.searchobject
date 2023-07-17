@@ -1,0 +1,48 @@
+{
+  "lastmodifieddate" : 1660750758.117857,
+  "ocrcapturestring" : "<",
+  "testlocationdata" : [
+    {
+      "connectionserverid" : "10.211.55.3",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "LOCAL",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "capturedocrtext" : "<",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Precise to Pixel",
+        "Discrepancy" : "_0",
+        "Tolerance" : "_1",
+        "HotSpot" : "[14,24]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "name" : "icons\/carousel\/left.png",
+      "capturerect" : [
+        356,
+        316,
+        30,
+        49
+      ]
+    }
+  ],
+  "createddate" : 1660750758.117857,
+  "lastfoundlocation" : [
+    501,
+    379,
+    30,
+    49
+  ],
+  "originalcapturelocation" : [
+    356,
+    316,
+    30,
+    49
+  ],
+  "lastfounddate" : 1662464343.7135081,
+  "name" : "icons\/carousel\/left"
+}

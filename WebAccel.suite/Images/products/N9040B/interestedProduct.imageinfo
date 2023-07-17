@@ -1,0 +1,24 @@
+﻿{
+    CaptureDate = "2022-09-21 08:12:42 +0000";
+    CaptureHost = "win10RDP";
+    CaptureScreenSize = (
+        "1920",
+        "1080");
+    HasAlpha = 1;
+    HotSpotX = 119;
+    HotSpotY = 88;
+    IgnoreColor = (
+        "#524D52");
+    IgnoreColorTolerance = (
+        0);
+    ImageDescription = <>;
+    LastKnownLocationX = 0;
+    LastKnownLocationY = 0;
+    OriginalLocationX = 528;
+    OriginalLocationY = 630;
+    Precise = 0;
+    Pulsing = 0;
+    Scale = 1;
+    SearchAlgorithm = "TextSmoothSquare";
+    tags = ();
+}

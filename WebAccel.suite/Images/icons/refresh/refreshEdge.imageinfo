@@ -1,0 +1,22 @@
+﻿{
+    CaptureDate = "2022-08-31 10:40:35 +0000";
+    CaptureHost = "win10RDP";
+    CaptureScreenSize = (
+        "1920",
+        "1080");
+    HasAlpha = 1;
+    HotSpotX = 14;
+    HotSpotY = 16;
+    ImageDescription = <>;
+    ImageTolerance = 85;
+    LastKnownLocationX = 0;
+    LastKnownLocationY = 0;
+    OriginalLocationX = 62;
+    OriginalLocationY = 40;
+    Precise = 0;
+    Pulsing = 0;
+    Scale = 0.95;
+    SearchAlgorithm = "TextSmoothSquare";
+    SearchObjectName = "icons/refresh/refreshEdge2";
+    tags = ();
+}

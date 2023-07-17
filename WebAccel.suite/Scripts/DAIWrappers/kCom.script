@@ -1,0 +1,118 @@
+﻿
+
+to launchKcom browser, region
+	
+	set the textstyle.caseSensitive to yes
+	set the textstyle.DPI to "144"
+	
+	// get the language and translated region
+	put setupLang (region) into regionList
+	
+	//setup using chosen language
+	core.setup(regionList.language)
+	
+	//launch Keysight.com
+	core.launchURL browser,("www.keysight.com")
+	
+	//change keysight region
+	moveto the center of the RemoteScreenRectangle
+	waitfor universal pageWait, image:"icons/refresh"
+	"DAIWrappers/kCom".selectRegion (regionList.region)
+	wait 1
+end launchKcom
+
+launchKcom ("chrome"), ("United States")
+
+
+to setupLang regionInput
+	Set regionLang to{
+		//a table with all regions and corresponding language translated locales
+		"United States":(language:"english", region:"United States"),
+		"Germany":(language:"german", region:"Deutschland"),
+		"China":(language:"ChinesePRC", region:"中国"),
+		"Japan":(language:"Japanese", region:"日本"),
+	}
+	Try
+		Set outVar to regionLang.(regionInput)
+	Catch theException
+		throw regionInput && "is not a recognized input region, using United States."
+		set outVar to regionLang.("United States")
+	End try
+	log outVar
+	return outVar
+end setupLang
+
+setuplang ("United States")
+
+
+to selectRegion inputLang
+	core.navigate ("icons/selectRegion")
+	wait 1
+	"DAIWrappers/kCom".getTS ("white")
+	click {text:inputLang, waitfor:0,language:"English,"& universal language, ignoreNewlines:on, ignorespaces:on, SearchRectangle:config().SUT.(countrySection)}
+	wait 0.5
+	waitfor universal pageWait, image:"icons/refresh"
+end selectRegion
+
+to moveSlider
+	MoveTo image:"icons/slider", waitfor:0
+	drag 
+	drop MouseLocation() + [50,0]
+	wait 2
+end moveSlider
+
+to changeURL expectation
+	typetext controlKey, "l"
+	put getURL() into the remoteClipboard
+	typetext controlkey, "v"
+	typetext returnkey
+	core.validate (expectation)
+end changeURL
+
+to getURL
+	//get the URL based off parameters in input excel
+	
+	set URL to getQuoteVal ("URL")
+	set Model to getQuoteVal ("Model")
+	set Config to getQuoteVal ("Config")
+	
+	Set CmpId to [formattedTime("%m%d%H%M%S", the time)]
+	put item 1 of CmpID into NewCmpID
+	
+	//now inseert these values into the URL
+	Replace "[MODEL]" by Model in URL
+	Replace "[CONFIG]" by Config in URL
+	Replace "[CMPID]" by NewCmpId in URL 
+	
+	return URL
+	
+end getURL
+
+
+to getQuoteVal inp
+	set myExcelDB to {type: "excel", file: ResourcePath("CustomQuote_XLS_IN.xlsx")}
+	put the records of myExcelDB into tempFile
+	return the first item of tempFile.(inp)
+end getQuoteVal
+
+to getTS TStyle
+	set textsyle to []
+	log TStyle
+	Set StyleProperties to{
+		//hosts different textstyles...
+		popUp:(contrast:"On", contrastColor:"#FFFFFF", contrastTolerance:"50"),
+		redButton:(contrast:"On", contrastColor:"#F00129", contrastTolerance:"50", textDifference:1),
+		white:( contrast:"On", contrastColor:"#FFFFFF", contrastTolerance:"30", textDifference:1),
+		Default:(contrast:"Off"),
+	}
+	Try
+		Set the TextStyle to StyleProperties.(TStyle)
+	Catch theException
+		throw TStyle && "is not a recognized StyleProperties."
+		Set the TextStyle to "Default"
+	End try
+	return the TextStyle
+	
+end getTS
+
+

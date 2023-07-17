@@ -1,0 +1,72 @@
+{
+  "lastmodifieddate" : 1661510013.0261722,
+  "testlocationdata" : [
+    {
+      "name" : "products\/N9040B UXA Signal Analyzer\/interestedProduct.png",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "LOCAL",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Tolerant of Background",
+        "Discrepancy" : "_0",
+        "Tolerance" : "_45",
+        "HotSpot" : "[113,62]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "connectionserverid" : "10.211.55.3",
+      "capturerect" : [
+        532,
+        96,
+        228,
+        163
+      ]
+    },
+    {
+      "name" : "products\/N9040B\/interestedProduct.png",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Smoothed for Text",
+        "Discrepancy" : "_0",
+        "Tolerance" : "_73",
+        "HotSpot" : "[113,62]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "connectionserverid" : "10.211.55.3",
+      "capturerect" : [
+        532,
+        96,
+        228,
+        163
+      ]
+    }
+  ],
+  "createddate" : 1660749956.1652269,
+  "lastfoundlocation" : [
+    532,
+    443,
+    228,
+    163
+  ],
+  "originalcapturelocation" : [
+    532,
+    96,
+    228,
+    163
+  ],
+  "lastfounddate" : 1663678432.8721919,
+  "name" : "products\/N9040B UXA Signal Analyzer\/interestedProduct"
+}

@@ -1,0 +1,47 @@
+{
+  "lastmodifieddate" : 1662394452.55689,
+  "ocrcapturestring" : "o",
+  "testlocationdata" : [
+    {
+      "name" : "icons\/refresh\/refreshInPriv.png",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Tolerant of Background",
+        "Discrepancy" : "_0",
+        "Tolerance" : "_45",
+        "HotSpot" : "[13,10]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "connectionserverid" : "10.211.55.3",
+      "capturerect" : [
+        60,
+        42,
+        26,
+        21
+      ]
+    }
+  ],
+  "createddate" : 1662394397.0966439,
+  "lastfoundlocation" : [
+    64,
+    43,
+    16,
+    16
+  ],
+  "originalcapturelocation" : [
+    60,
+    42,
+    26,
+    21
+  ],
+  "lastfounddate" : 1662710424.952976,
+  "name" : "icons\/refresh\/refreshInPriv"
+}

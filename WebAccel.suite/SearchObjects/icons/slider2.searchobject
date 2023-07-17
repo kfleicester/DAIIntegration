@@ -1,0 +1,98 @@
+{
+  "lastmodifieddate" : 1662653198.0368981,
+  "testlocationdata" : [
+    {
+      "name" : "icons\/slider.png",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Smoothed for Text",
+        "Discrepancy" : "_0",
+        "Tolerance" : "_14",
+        "HotSpot" : "[10,10]",
+        "CropRectangle" : "[0,0,20,20]"
+      },
+      "type" : 1,
+      "connectionserverid" : "10.211.55.3",
+      "capturerect" : [
+        372,
+        732,
+        20,
+        20
+      ]
+    },
+    {
+      "name" : "icons\/slider.png",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Smoothed for Text",
+        "Discrepancy" : "_0",
+        "Tolerance" : "_9",
+        "HotSpot" : "[9,9]",
+        "CropRectangle" : "[1,1,19,19]"
+      },
+      "type" : 1,
+      "connectionserverid" : "10.211.55.3",
+      "capturerect" : [
+        372,
+        732,
+        18,
+        18
+      ]
+    },
+    {
+      "name" : "icons\/slider.png",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Smoothed for Text",
+        "Discrepancy" : "_0",
+        "Tolerance" : "_0",
+        "HotSpot" : "[8,8]",
+        "CropRectangle" : "[2,2,18,18]"
+      },
+      "type" : 1,
+      "connectionserverid" : "10.211.55.3",
+      "capturerect" : [
+        372,
+        732,
+        16,
+        16
+      ]
+    }
+  ],
+  "createddate" : 1662121864.2613101,
+  "lastfoundlocation" : [
+    244,
+    1,
+    16,
+    16
+  ],
+  "originalcapturelocation" : [
+    372,
+    732,
+    20,
+    20
+  ],
+  "lastfounddate" : 1662653291.0825119,
+  "name" : "icons\/slider2"
+}

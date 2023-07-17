@@ -1,0 +1,75 @@
+{
+  "lastmodifieddate" : 1662465004.8266149,
+  "ocrcapturestring" : ">",
+  "testlocationdata" : [
+    {
+      "connectionserverid" : "10.211.55.3",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "capturedocrtext" : ">",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Smoothed for Text",
+        "Discrepancy" : "_0",
+        "Tolerance" : "_14",
+        "HotSpot" : "[20,27]",
+        "CropRectangle" : "[2,4,27,44]"
+      },
+      "type" : 1,
+      "name" : "icons\/carousel\/right.png",
+      "capturerect" : [
+        1518,
+        461,
+        25,
+        40
+      ]
+    },
+    {
+      "connectionserverid" : "10.211.55.3",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "win10RDP",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "capturedocrtext" : ">",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Smoothed for Text",
+        "Discrepancy" : "_0",
+        "Tolerance" : 24,
+        "HotSpot" : "[20,27]",
+        "CropRectangle" : "[2,4,27,44]"
+      },
+      "type" : 1,
+      "name" : "icons\/carousel\/right.png",
+      "capturerect" : [
+        1518,
+        461,
+        25,
+        40
+      ]
+    }
+  ],
+  "createddate" : 1662464585.3094211,
+  "lastfoundlocation" : [
+    1520,
+    448,
+    25,
+    40
+  ],
+  "originalcapturelocation" : [
+    1518,
+    461,
+    25,
+    40
+  ],
+  "lastfounddate" : 1664549770.735841,
+  "name" : "icons\/carousel\/right2"
+}
