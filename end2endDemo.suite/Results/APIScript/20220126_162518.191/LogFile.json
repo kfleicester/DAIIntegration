@@ -1,0 +1,28 @@
+{
+  "entries" : [
+    {
+      "identifier" : "START",
+      "message" : "Running APIScript.script",
+      "timestamp" : "2022-01-26 16:25:18.195 +0000"
+    },
+    {
+      "handlerName" : "on_apiscript",
+      "message" : "Assertion Succeeded:  (assertion: APIResults.statuscode is equal to 200; true: 200 IS equal to 200)",
+      "timestamp" : "2022-01-26 16:25:18.497 +0000",
+      "identifier" : "LogSuccess",
+      "scriptName" : "APIScript.script",
+      "handlerLine" : 5
+    },
+    {
+      "identifier" : "EndTestCase",
+      "message" : "(Duration:\"0.600576\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2022-01-26 16:25:18 +0000\", Successes:\"1\", TestCase:\"APIScript.script\", Warnings:\"0\")",
+      "timestamp" : "2022-01-26 16:25:18.797 +0000"
+    },
+    {
+      "identifier" : "SUCCESS",
+      "message" : "Execution Time 0:00:00 APIScript.script",
+      "timestamp" : "2022-01-26 16:25:18.806 +0000"
+    }
+  ],
+  "createdTimestamp" : "2022-01-26 16:25:18.196 +0000"
+}

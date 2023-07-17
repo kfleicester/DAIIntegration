@@ -1,0 +1,80 @@
+﻿
+to getCafeInfo postcode
+
+	VMScript.launchFunction "win10VNC", "chrome", "maps.google.co.uk"
+	VMScript.findCafe postcode
+	set [latLong, cafeName] to VMScript.getCafeData
+	VMScript.closeWindow
+	
+	return [latLong, cafeName]
+end getCafeInfo
+
+
+
+
+
+
+
+
+
+
+
+
+//function to connect to my windows SUT, launch a browser and a desired URL
+
+to launchFunction SUT, brwsr, site
+	Connect SUT
+	waitfor 30, "Logos"
+	typetext windowsKey, "r"
+	waitfor 10, text:"Type the name of"
+	typetext brwsr && site, returnkey
+	//waitfor 20, "Icons"
+	wait 3
+	waitfor 30, text:"Groceries", contrast:"On", contrastColor:"#2B3033", contrastTolerance:"22"
+end launchFunction
+
+to findCafe loc
+	typetext "Coffe shops near " & loc, returnKey
+	wait 1
+	waitfor 10, "Icons/4Stars"
+	if ImageFound(text:"Ad", waitFor:5, textStyle:"blackText")
+		put EveryImageLocation(text:"Ad", textStyle:"blackText") into adLists
+		put the last item of adLists into height
+	else 
+		put [0,0] into height
+	end if
+	click imageName:"Icons/4Stars", SearchRectangle:[[0, height.y], RemoteScreenSize()]
+	wait 2
+	WaitFor 10, text:"Directions" //change to image?
+	
+end findCafe
+
+to getCafeData
+	//assumes we have found a location and are on its page, gets lat long and cafe name from URL
+	click text:"google.co.uk"
+	typetext controlKey, "a"
+	typetext controlKey, "c"
+	put RemoteClipboard(10) into fullURL
+	
+	split fullURL by "@"
+	put the second item of fullURL into shorterURL
+	split shorterURL by ","
+	put the first 2 items of shorterURL into latLong
+	join latLong using ","
+	log latLong
+	
+	//now can getname from sae URL
+	put the first item of fullURL into nameURL
+	log nameURL
+	split nameURL by "/"
+	put the last item of nameURL into cafeName
+	replace every occurrence of "+" in cafeName with " "
+	log cafeName
+	return [latLong, cafeName]
+end getCafeData
+
+to closeWindow
+	typetext windowsAltKey, F4
+	wait 2
+	Disconnect 
+end closeWindow

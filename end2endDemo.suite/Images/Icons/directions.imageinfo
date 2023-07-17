@@ -1,0 +1,19 @@
+﻿{
+    CaptureDate = "2022-01-17 12:42:19 +0000";
+    CaptureHost = "win10RDP2";
+    CaptureScreenSize = (
+        1536,
+        960);
+    HasAlpha = 1;
+    HotSpotX = 22;
+    HotSpotY = 26;
+    LastKnownLocationX = 0;
+    LastKnownLocationY = 0;
+    OriginalLocationX = 40;
+    OriginalLocationY = 436;
+    Precise = 0;
+    Pulsing = 0;
+    Scale = 1;
+    SearchObjectName = "Icons/directions";
+    tags = ();
+}

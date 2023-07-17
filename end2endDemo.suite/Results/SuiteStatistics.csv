@@ -1,0 +1,5 @@
+﻿Script,Last Status,Runs,Fails,First Run,Last Run,Avg Time(Success)
+weatherAPI-API,Success,3,0,2022-01-26 16:21:45 +0000,2023-05-05 10:54:48 +0100,0:00:00
+APIScript,Success,4,0,2022-01-26 16:22:48 +0000,2022-01-26 16:25:18 +0000,0:00:00
+ODBCScript,Success,1,0,2022-01-26 15:53:47 +0000,2022-01-26 15:53:47 +0000,0:00:00
+VMScript-API,Success,1,0,2022-01-25 11:09:14 +0000,2022-01-25 11:09:14 +0000,0:00:00

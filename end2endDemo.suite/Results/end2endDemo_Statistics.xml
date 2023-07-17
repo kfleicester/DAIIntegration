@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<statistics>
+ <script name="weatherAPI-API">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>3</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2022-01-26 16:21:45 +0000</FirstRun>
+  <LastRun>2023-05-05 10:54:48 +0100</LastRun>
+  <TotalTimeOnSuccess>1.544848</TotalTimeOnSuccess>
+ </script>
+ <script name="APIScript">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>4</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2022-01-26 16:22:48 +0000</FirstRun>
+  <LastRun>2022-01-26 16:25:18 +0000</LastRun>
+  <TotalTimeOnSuccess>2.719393</TotalTimeOnSuccess>
+ </script>
+ <script name="ODBCScript">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>1</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2022-01-26 15:53:47 +0000</FirstRun>
+  <LastRun>2022-01-26 15:53:47 +0000</LastRun>
+  <TotalTimeOnSuccess>0.376691</TotalTimeOnSuccess>
+ </script>
+ <script name="VMScript-API">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>1</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2022-01-25 11:09:14 +0000</FirstRun>
+  <LastRun>2022-01-25 11:09:14 +0000</LastRun>
+  <TotalTimeOnSuccess>0.696802</TotalTimeOnSuccess>
+ </script>
+</statistics>

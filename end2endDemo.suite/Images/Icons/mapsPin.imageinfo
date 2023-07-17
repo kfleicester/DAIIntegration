@@ -1,0 +1,19 @@
+﻿{
+    CaptureDate = "2022-01-17 12:38:11 +0000";
+    CaptureHost = "win10RDP2";
+    CaptureScreenSize = (
+        1536,
+        960);
+    HasAlpha = 1;
+    HotSpotX = 11;
+    HotSpotY = 10;
+    LastKnownLocationX = 0;
+    LastKnownLocationY = 0;
+    OriginalLocationX = 328;
+    OriginalLocationY = 92;
+    Precise = 0;
+    Pulsing = 0;
+    Scale = 1;
+    SearchObjectName = "Icons/mapsPin";
+    tags = ();
+}

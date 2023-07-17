@@ -1,0 +1,21 @@
+﻿{
+    CaptureDate = "2022-01-25 10:25:16 +0000";
+    CaptureHost = "win10VNC";
+    CaptureScreenSize = (
+        "3072",
+        "1920");
+    HasAlpha = 1;
+    HotSpotX = 27;
+    HotSpotY = 19;
+    ImageDescription = <>;
+    ImageTolerance = 50;
+    LastKnownLocationX = 0;
+    LastKnownLocationY = 0;
+    OriginalLocationX = 39;
+    OriginalLocationY = 1849;
+    Precise = 0;
+    Pulsing = 0;
+    Scale = 1;
+    SearchObjectName = "windowsVNC";
+    tags = ();
+}

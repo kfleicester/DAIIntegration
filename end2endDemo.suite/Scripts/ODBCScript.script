@@ -1,0 +1,36 @@
+﻿set myDB to {type:"ODBC", DSN:"sqlite3"}
+open database myDB
+put executeSQL(myDB, "select * from EMPLOYEES")
+close database myDB
+
+
+to SQLQuery cmd
+	set myDB to {type:"ODBC", DSN:"sqlite3"}
+	open database myDB
+	put executeSQL(myDB, cmd)
+	close database myDB
+end SQLQuery
+
+put SQLQuery ("Select * from EMPLOYEES")
+
+set myDB to {type:"ODBC", DSN:"sqlite3"}
+put table "EMPLOYEES" of myDB into employeeTable
+put Postcode of the record of employeeTable where Surname is "Johnson" 
+
+to getPostcode sname
+	set myDB to {type:"ODBC", DSN:"sqlite3"}
+	put table "EMPLOYEES" of myDB into employeeTable
+	put Postcode of the record of employeeTable where Surname is sname into postcode
+	return postcode
+end getPostcode
+
+put getPostcode ("Johnson")
+
+to getEmail sname
+	set myDB to {type:"ODBC", DSN:"sqlite3"}
+	put table "EMPLOYEES" of myDB into employeeTable
+	put "E-mail" of the record of employeeTable where Surname is sname into email
+	return email
+end getEmail
+
+put getEmail ("Johnson")

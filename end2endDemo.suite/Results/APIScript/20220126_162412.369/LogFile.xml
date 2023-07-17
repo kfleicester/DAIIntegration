@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="APIScript_script" package="end2endDemo.suite" timestamp="2022-01-26 16:24:12.369 +0000"
+ tests="1"  failures="0" errors="0" time="0.730345">
+  <properties>
+   <property name="RunDate" value="2022-01-26 16:24:12.369 +0000"/>
+   <property name="Status" value="Success"/>
+  </properties>
+  <testcase name="APIScript.script" assertions="1" status="success"  time="0.725977">
+  </testcase>
+ </testsuite>
+</testsuites>

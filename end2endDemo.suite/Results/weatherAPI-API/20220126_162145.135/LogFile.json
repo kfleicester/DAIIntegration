@@ -1,0 +1,20 @@
+{
+  "entries" : [
+    {
+      "identifier" : "START",
+      "message" : "Running weatherAPI.apitest",
+      "timestamp" : "2022-01-26 16:21:45.138 +0000"
+    },
+    {
+      "identifier" : "EndTestCase",
+      "message" : "(Duration:\"0.646199\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2022-01-26 16:21:45 +0000\", Successes:\"1\", TestCase:\"weatherAPI.apitest\", Warnings:\"0\")",
+      "timestamp" : "2022-01-26 16:21:45.786 +0000"
+    },
+    {
+      "identifier" : "SUCCESS",
+      "message" : "Execution Time 0:00:00 weatherAPI.apitest",
+      "timestamp" : "2022-01-26 16:21:45.794 +0000"
+    }
+  ],
+  "createdTimestamp" : "2022-01-26 16:21:45.140 +0000"
+}

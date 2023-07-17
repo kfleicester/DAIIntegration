@@ -1,0 +1,43 @@
+﻿
+to emailEmployee email, cafeName, weather
+
+	mobileScript.connectPhone "iPhone 12"
+	mobileScript.sendEmail email, cafeName, weather
+	mobileScript.disconnectPhone
+	
+end emailEmployee
+
+
+
+emailEmployee "email@email.com", "cafe", "weather"
+
+
+
+
+to connectPhone SUT
+	connect SUT
+	waitfor 15, "Icons/mobile"
+end connectPhone
+
+to sendEmail email, cafeName, weather
+	LaunchApp "Outlook"
+	waitfor 10, text:"Inbox"
+	click "Icons/mobile/newMail"
+	click text:"New Message", waitfor:10
+	wait 1
+	waitfor 10, text:"New Message"
+	typeText email, returnkey
+	Click text:"Subject"
+	wait 0.5
+	typeText "Let's get a coffee", returnKey
+	typeText "Hi there my favourite employee,", returnKey, returnKey
+	typeText "I know this great Cafe near you called ", cafeName, ". Weather says it's ", lowercase(weather), ".", returnKey, returnKey
+	typetext "See you shortly, ", returnKey, "Big boss"
+	wait 2
+end sendEmail
+
+to disconnectPhone
+	KillApp "Outlook"
+	wait 0.5
+	Disconnect 
+end disconnectPhone

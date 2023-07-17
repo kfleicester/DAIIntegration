@@ -1,0 +1,28 @@
+﻿set URL to "http://api.weatherstack.com/current?access_key=3ea2560c402ec00d6f91f8c926535fbf&query=london"
+
+put GET(url:URL) into APIResults
+
+assert that APIResults.statuscode is equal to 200
+
+put JSONValue(APIResults.responsebody) into responseBody
+
+put item one of responsebody.current.weather_descriptions
+
+to getWeather latLong
+	set URL to "http://api.weatherstack.com/current?access_key=3ea2560c402ec00d6f91f8c926535fbf&query="&latLong
+	
+	put GET(url:URL) into APIResults
+	
+	assert that APIResults.statuscode is equal to 200
+	
+	put JSONValue(APIResults.responsebody) into responseBody
+	
+	return responseBody
+	
+	put item one of responsebody.current.weather_descriptions into weatherDesc
+	
+	return weatherDesc
+	
+end getWeather
+
+log getWeather ("50,0")

@@ -1,0 +1,20 @@
+{
+  "entries" : [
+    {
+      "identifier" : "START",
+      "message" : "Running weatherAPI.apitest",
+      "timestamp" : "2023-05-05 10:30:03.218 +0100"
+    },
+    {
+      "identifier" : "EndTestCase",
+      "message" : "(Duration:\"0.439397\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2023-05-05 10:30:03 +0100\", Successes:\"1\", TestCase:\"weatherAPI.apitest\", Warnings:\"0\")",
+      "timestamp" : "2023-05-05 10:30:03.667 +0100"
+    },
+    {
+      "identifier" : "SUCCESS",
+      "message" : "Execution Time 0:00:00 weatherAPI.apitest",
+      "timestamp" : "2023-05-05 10:30:03.689 +0100"
+    }
+  ],
+  "createdTimestamp" : "2023-05-05 10:30:03.225 +0100"
+}

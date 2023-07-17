@@ -1,0 +1,20 @@
+{
+  "entries" : [
+    {
+      "identifier" : "START",
+      "message" : "Running ODBCScript.script",
+      "timestamp" : "2022-01-26 15:53:47.245 +0000"
+    },
+    {
+      "identifier" : "EndTestCase",
+      "message" : "(Duration:\"0.369995\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2022-01-26 15:53:47 +0000\", Successes:\"1\", TestCase:\"ODBCScript.script\", Warnings:\"0\")",
+      "timestamp" : "2022-01-26 15:53:47.618 +0000"
+    },
+    {
+      "identifier" : "SUCCESS",
+      "message" : "Execution Time 0:00:00 ODBCScript.script",
+      "timestamp" : "2022-01-26 15:53:47.627 +0000"
+    }
+  ],
+  "createdTimestamp" : "2022-01-26 15:53:47.248 +0000"
+}

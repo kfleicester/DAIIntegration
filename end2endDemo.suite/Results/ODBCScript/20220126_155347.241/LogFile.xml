@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="ODBCScript_script" package="end2endDemo.suite" timestamp="2022-01-26 15:53:47.241 +0000"
+ tests="1"  failures="0" errors="0" time="0.376691">
+  <properties>
+   <property name="RunDate" value="2022-01-26 15:53:47.241 +0000"/>
+   <property name="Status" value="Success"/>
+  </properties>
+  <testcase name="ODBCScript.script" assertions="1" status="success"  time="0.369995">
+  </testcase>
+ </testsuite>
+</testsuites>

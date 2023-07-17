@@ -1,0 +1,18 @@
+﻿
+
+to inviteEmployee sname
+
+	set postCode to ODBCScript.getPostCode (sname)
+	
+	set [latLong, cafeName] to VMScript.getCafeInfo (postCode)
+	
+	set weather to APIScript.getWeather (latlong)
+	
+	set email to ODBCScript.getEmail (sname)
+	
+	mobileScript.emailEmployee email, cafeName, weather
+	
+	
+end inviteEmployee
+
+inviteEmployee "Johnson"

@@ -1,0 +1,19 @@
+﻿{
+    CaptureDate = "2022-01-17 13:55:57 +0000";
+    CaptureHost = "iPhone 12";
+    CaptureScreenSize = (
+        1170,
+        2532);
+    HasAlpha = 1;
+    HotSpotX = 71;
+    HotSpotY = 73;
+    LastKnownLocationX = 0;
+    LastKnownLocationY = 0;
+    OriginalLocationX = 107;
+    OriginalLocationY = 2278;
+    Precise = 0;
+    Pulsing = 0;
+    Scale = 1;
+    SearchObjectName = "Icons/mobile/phone";
+    tags = ();
+}

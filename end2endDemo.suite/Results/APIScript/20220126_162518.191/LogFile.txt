@@ -1,0 +1,4 @@
+﻿2022-01-26 16:25:18.195 +0000	START		Running APIScript.script
+2022-01-26 16:25:18.497 +0000	LogSuccess		Assertion Succeeded:  (assertion: APIResults.statuscode is equal to 200; true: 200 IS equal to 200)	5	on_apiscript	APIScript.script
+2022-01-26 16:25:18.797 +0000	EndTestCase		(Duration:"0.600576", Errors:"0", Exceptions:"0", StartTime:"2022-01-26 16:25:18 +0000", Successes:"1", TestCase:"APIScript.script", Warnings:"0")
+2022-01-26 16:25:18.806 +0000	SUCCESS		Execution Time 0:00:00 APIScript.script

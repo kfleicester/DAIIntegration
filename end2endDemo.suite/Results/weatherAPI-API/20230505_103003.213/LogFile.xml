@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="weatherAPI_apitest" package="end2endDemo.suite" timestamp="2023-05-05 10:30:03.213 +0100"
+ tests="1"  failures="0" errors="0" time="0.452031">
+  <properties>
+   <property name="RunDate" value="2023-05-05 10:30:03.213 +0100"/>
+   <property name="Status" value="Success"/>
+  </properties>
+  <testcase name="weatherAPI.apitest" assertions="1" status="success"  time="0.439397">
+  </testcase>
+ </testsuite>
+</testsuites>
